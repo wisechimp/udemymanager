@@ -58,3 +58,4 @@ package.json
 package-lock.json
 src/firebaseCreds.env
 .env
+.babelrc
