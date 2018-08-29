@@ -56,3 +56,5 @@ buck-out/
 *.jsbundle
 package.json
 package-lock.json
+src/firebaseCreds.env
+.env
