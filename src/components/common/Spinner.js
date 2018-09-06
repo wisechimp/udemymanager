@@ -9,7 +9,7 @@ const Spinner = ({ size }) => {
       />
     </View>
   );
-}
+};
 
 const styles = {
   spinnerStyle: {

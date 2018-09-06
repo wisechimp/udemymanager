@@ -4,3 +4,4 @@ export * from './CardSection';
 export * from './Header';
 export * from './InputField';
 export * from './Spinner';
+export * from './ConfirmModal';
