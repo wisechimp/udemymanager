@@ -2,9 +2,17 @@ import React, { Component } from 'react';
 import { Picker, View, Text } from 'react-native';
 import { connect } from 'react-redux';
 import { CardSection, InputField } from './common';
-import { employeeUpdate } from '../actions';
+import { employeeUpdate, resetEmployeeForm } from '../actions';
 
 class EmployeeForm extends Component {
+
+  componentWillMount() {
+    return () => {
+      console.log('Component has unmounted or dismounted you tool!');
+      resetEmployeeForm();
+    };
+  }
+
   render() {
     return (
       <View>
@@ -59,4 +67,4 @@ const mapStateToProps = (state) => {
   return { name, phone, shift };
 };
 
-export default connect(mapStateToProps, { employeeUpdate })(EmployeeForm);
+export default connect(mapStateToProps, { employeeUpdate, resetEmployeeForm })(EmployeeForm);

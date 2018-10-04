@@ -6,7 +6,8 @@ import {
    EMPLOYEE_UPDATE,
    CREATE_EMPLOYEE,
    EMPLOYEES_FETCH_SUCCESS,
-   EDIT_EMPLOYEE_SUCCESS
+   EDIT_EMPLOYEE_SUCCESS,
+   RESET_EMPLOYEE_FORM
  } from './types';
 
 export const employeeUpdate = ({ prop, value }) => {
@@ -63,4 +64,8 @@ export const deleteEmployee = ({ uid }) => {
       Actions.pop();
     });
   };
+};
+
+export const resetEmployeeForm = () => {
+  return { type: RESET_EMPLOYEE_FORM };
 };

@@ -7,7 +7,7 @@ import { employeeUpdate, editEmployeeData, deleteEmployee } from '../actions';
 import EmployeeForm from './EmployeeForm';
 
 class EditEmployee extends Component {
-  state = {modalVisibility: false};
+  state = { modalVisibility: false };
   componentWillMount() {
     _.each(this.props.employee, (value, prop) => {
       this.props.employeeUpdate({ prop, value });
